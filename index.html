@@ -3,23 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Productive Day - To-Do List</title>
+    <link rel="stylesheet" href="/css/bio.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
+    <header class="nav-bar">
       <h1>My Productive Day</h1>
       <p>Organize your tasks and boost your productivity</p>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <hr />
-
-    <!-- Main Content -->
-    <main>
+    <main class="container">
       <section>
         <h2>Add a New Task</h2>
         <form>
@@ -36,8 +35,8 @@
 
       <br />
 
-      <section>
-        <h2>Today's Tasks</h2>
+      <sectio class="task-section">
+        <h2 class="heading">Today's Tasks</h2>
         <ul>
           <li>✅complete my HTML,CSS,JAVA course</li>
           <li>✅ Complete HTML,CSS,JAVA project</li>
@@ -45,12 +44,11 @@
           <li>🕒 Go for a 20-minute walk</li>
           <li>🕒 Read 10 pages of a book</li>
         </ul>
-      </section>
+      </sectio>
     </main>
 
     <hr />
 
-    <!-- Footer -->
     <footer>
       <p>&copy; 2025 My Productive Day. All rights reserved.</p>
     </footer>
