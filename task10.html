@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task Adder</title>
+</head>
+<body>
+<h2>Task List</h2>
+<input type="text" id="taskInput" placeholder="Enter a task">
+<button onclick="addTask()">Add Task</button>
+<ul id="taskList"></ul>
+
+<script>
+function addTask() {
+  let task = document.getElementById("taskInput").value
+  if (task === "") {
+    alert("Please enter a task")
+    return
+  }
+  let confirmAdd = confirm("Add this task?")
+  if (confirmAdd) {
+    let li = document.createElement("li")
+    li.textContent = task
+    document.getElementById("taskList").appendChild(li)
+    document.getElementById("taskInput").value = ""
+  }
+
+</script>
+</body>
+</html>
